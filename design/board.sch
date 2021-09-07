@@ -711,17 +711,6 @@ Wire Wire Line
 	10275 4100 10125 4100
 Wire Wire Line
 	10275 4100 10275 4150
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J1
-U 1 1 6141B8CA
-P 6575 1650
-F 0 "J1" V 6671 1262 50  0000 R CNN
-F 1 "Conn_02x06_Odd_Even" V 6580 1262 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 6575 1650 50  0001 C CNN
-F 3 "~" H 6575 1650 50  0001 C CNN
-	1    6575 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4325 5325 4325 5375
 Wire Wire Line
@@ -769,51 +758,33 @@ F 3 "~" H 4325 5525 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6475 1950 6475 1850
+	6575 1950 6575 1850
 Wire Wire Line
 	2725 1950 2725 4200
 Wire Wire Line
-	4450 1250 6475 1250
+	4450 1250 6575 1250
 Wire Wire Line
-	6475 1250 6475 1350
+	6575 1250 6575 1350
 Wire Wire Line
 	4450 1250 4450 2950
-Wire Wire Line
-	6675 2325 6675 1850
-Wire Wire Line
-	6150 2325 6150 4050
 Wire Wire Line
 	4675 3850 4675 1225
 Wire Wire Line
 	4675 1225 6675 1225
 Wire Wire Line
 	6675 1225 6675 1350
-NoConn ~ 6575 1275
-NoConn ~ 6575 1950
 Wire Wire Line
-	6150 2325 6675 2325
+	8375 1975 6775 1975
 Wire Wire Line
-	6575 1850 6575 1950
+	6775 1975 6775 1850
 Wire Wire Line
-	6575 1275 6575 1350
-Wire Wire Line
-	8375 2000 6775 2000
-Wire Wire Line
-	6775 2000 6775 1850
-Wire Wire Line
-	8375 2000 8375 5075
+	8375 1975 8375 5075
 Wire Wire Line
 	10275 1225 6775 1225
 Wire Wire Line
 	6775 1225 6775 1350
 Wire Wire Line
 	10275 1225 10275 3900
-NoConn ~ 6875 1950
-Wire Wire Line
-	6875 1950 6875 1850
-NoConn ~ 6875 1275
-Wire Wire Line
-	6875 1275 6875 1350
 Wire Wire Line
 	2575 2550 2575 3800
 Connection ~ 3200 2550
@@ -837,7 +808,7 @@ Wire Wire Line
 Wire Wire Line
 	2575 2550 3200 2550
 Wire Wire Line
-	2725 1950 6475 1950
+	2725 1950 6575 1950
 Wire Wire Line
 	4325 3850 4675 3850
 Wire Wire Line
@@ -845,13 +816,11 @@ Wire Wire Line
 Wire Wire Line
 	9575 4550 10275 4550
 Wire Wire Line
-	6375 1350 6375 1100
-Text Label 6375 1200 1    50   ~ 0
+	6475 1350 6475 1100
+Text Label 6475 1200 1    50   ~ 0
 VCC
-Text Label 6375 1975 3    50   ~ 0
+Text Label 6475 2000 3    50   ~ 0
 GND
-Wire Wire Line
-	6375 1850 6375 2075
 Text Label 3750 2550 0    50   ~ 0
 VCC
 Text Label 3825 3600 0    50   ~ 0
@@ -881,27 +850,94 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 619CFCE4
-P 6375 1100
-F 0 "#FLG0101" H 6375 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 6375 1273 50  0000 C CNN
-F 2 "" H 6375 1100 50  0001 C CNN
-F 3 "~" H 6375 1100 50  0001 C CNN
-	1    6375 1100
+P 6475 1100
+F 0 "#FLG0101" H 6475 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6475 1273 50  0000 C CNN
+F 2 "" H 6475 1100 50  0001 C CNN
+F 3 "~" H 6475 1100 50  0001 C CNN
+	1    6475 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 619D00D6
-P 6375 2075
-F 0 "#FLG0102" H 6375 2150 50  0001 C CNN
-F 1 "PWR_FLAG" H 6375 2248 50  0000 C CNN
-F 2 "" H 6375 2075 50  0001 C CNN
-F 3 "~" H 6375 2075 50  0001 C CNN
-	1    6375 2075
+P 6475 2125
+F 0 "#FLG0102" H 6475 2200 50  0001 C CNN
+F 1 "PWR_FLAG" H 6475 2298 50  0000 C CNN
+F 2 "" H 6475 2125 50  0001 C CNN
+F 3 "~" H 6475 2125 50  0001 C CNN
+	1    6475 2125
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7125 4675 7675 4675
 Wire Wire Line
 	7675 5725 8375 5725
+Text Label 2575 4350 0    50   ~ 0
+L_67
+Text Label 1150 5450 1    50   ~ 0
+L_button
+Text Label 2725 4200 1    50   ~ 0
+L_out
+Text Label 1350 4400 0    50   ~ 0
+L_5
+Text Label 4300 3100 0    50   ~ 0
+U_67
+Text Label 2875 4200 1    50   ~ 0
+U_button
+Text Label 4450 2950 1    50   ~ 0
+U_out
+Text Label 3075 3150 0    50   ~ 0
+U_5
+Text Label 6000 4200 0    50   ~ 0
+R_67
+Text Label 4575 5300 1    50   ~ 0
+R_button
+Text Label 6150 4050 1    50   ~ 0
+R_out
+Text Label 4775 4250 0    50   ~ 0
+R_5
+Text Label 4175 5275 0    50   ~ 0
+D_67
+Text Label 2750 6375 1    50   ~ 0
+D_button
+Text Label 4325 5125 1    50   ~ 0
+D_out
+Text Label 2950 5325 0    50   ~ 0
+D_5
+Text Label 8225 5225 0    50   ~ 0
+A_67
+Text Label 6800 6325 1    50   ~ 0
+A_button
+Text Label 8375 5075 1    50   ~ 0
+A_out
+Text Label 7000 5275 0    50   ~ 0
+A_5
+Text Label 10125 4050 0    50   ~ 0
+B_67
+Text Label 8700 5150 1    50   ~ 0
+B_button
+Text Label 10275 3900 1    50   ~ 0
+B_out
+Text Label 8900 4100 0    50   ~ 0
+B_5
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 614D4CEC
+P 6575 1650
+F 0 "J1" V 6671 1362 50  0000 R CNN
+F 1 "Conn_02x04_Odd_Even" V 6580 1362 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 6575 1650 50  0001 C CNN
+F 3 "~" H 6575 1650 50  0001 C CNN
+	1    6575 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6475 1850 6475 2125
+Wire Wire Line
+	6675 1975 6675 1850
+Wire Wire Line
+	6150 1975 6150 4050
+Wire Wire Line
+	6150 1975 6675 1975
 $EndSCHEMATC
