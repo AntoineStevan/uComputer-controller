@@ -816,7 +816,7 @@ Wire Wire Line
 Wire Wire Line
 	9575 4550 10275 4550
 Wire Wire Line
-	6475 1350 6475 1100
+	6475 1350 6475 1325
 Text Label 6475 1200 1    50   ~ 0
 VCC
 Text Label 6475 2000 3    50   ~ 0
@@ -933,11 +933,36 @@ F 3 "~" H 6575 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6475 1850 6475 2125
+	6475 1850 6475 1875
 Wire Wire Line
 	6675 1975 6675 1850
 Wire Wire Line
 	6150 1975 6150 4050
 Wire Wire Line
 	6150 1975 6675 1975
+$Comp
+L Device:CP C0
+U 1 1 613820E5
+P 6175 1600
+F 0 "C0" H 6293 1646 50  0000 L CNN
+F 1 "CP" H 6293 1555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6213 1450 50  0001 C CNN
+F 3 "~" H 6175 1600 50  0001 C CNN
+	1    6175 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 1450 6175 1325
+Wire Wire Line
+	6175 1325 6475 1325
+Connection ~ 6475 1325
+Wire Wire Line
+	6475 1325 6475 1100
+Wire Wire Line
+	6475 1875 6175 1875
+Wire Wire Line
+	6175 1875 6175 1750
+Connection ~ 6475 1875
+Wire Wire Line
+	6475 1875 6475 2125
 $EndSCHEMATC
