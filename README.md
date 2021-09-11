@@ -3,8 +3,8 @@ This repo and project contain all the files used to create the game controller f
 
 
 ## Table Of Content.
-:- [0  ](https://github.com/AntoineStevan/uComputer-controller/tree/main/#0-prerequisites-toc)  Prerequisites.
-- [1  ](https://github.com/AntoineStevan/uComputer-controller/tree/main/#1-some-images-toc) Some images.
+ - [0  ](https://github.com/AntoineStevan/uComputer-controller/tree/main/#0-prerequisites-toc)  Prerequisites.
+ - [1  ](https://github.com/AntoineStevan/uComputer-controller/tree/main/#1-some-images-toc) Some images.
  - [2  ](https://github.com/AntoineStevan/uComputer-controller/tree/main/#2-open-in-kicad-toc)  Open in KiCAD.
  - [2.1](https://github.com/AntoineStevan/uComputer-controller/tree/main/#21-install-kicad-toc) Install KiCAD.
  - [2.2](https://github.com/AntoineStevan/uComputer-controller/tree/main/#22-use-kicad-toc)     Use KiCAD.
